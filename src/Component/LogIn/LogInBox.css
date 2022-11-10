@@ -1,0 +1,52 @@
+.colClick {
+    color: #F16B38;
+}
+
+.BoxLog {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    padding: 10px;
+}
+
+.MenuLog {
+    display: flex;
+}
+
+.MenuLog h1 {
+    margin-right: 10px;
+}
+
+.MenuLog a {
+    text-decoration: none;
+    color: gray;
+}
+
+.MenuLog a:active {
+    color: aqua;
+}
+
+.MenuLog a:hover {
+    color: aqua;
+}
+
+.menu {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+}
+
+.menu-item {
+    cursor: pointer;
+    padding: 5px;
+    height: 28px;
+    border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+.menu-item:hover {
+    color: #2980b9;
+}
+.loginpox{
+    width: 100%;
+}

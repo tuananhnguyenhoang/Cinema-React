@@ -1,0 +1,12 @@
+.NowSoon{
+    /* background-color: blue; */
+    padding: 0px 180px;
+    box-sizing: border-box;
+}
+.NowSoon .texta{
+    padding: 10px 10px 10px 100px;
+}
+.NowSoon a{
+    /* color: blue; */
+    text-decoration: none;
+}

@@ -1,0 +1,80 @@
+.col-Red {
+    color: red;
+}
+
+.Cur-poi {
+    cursor: pointer;
+}
+
+.mgL {
+    margin-right: 10px;
+}
+
+.mgT {
+    margin-top: 10px;
+}
+
+.RegisterBox {
+    width: 100%;
+}
+
+.RegisterBoxItem {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.RegisterBoxItem input {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 8px;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+select {
+    width: 100%;
+}
+
+.RegisterBoxItem1 {
+    display: flex;
+
+}
+
+.RegisterBoxItemBtn {
+    width: 100%;
+    background-color: coral;
+    border: none;
+    padding: 10px;
+    margin-top: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.RegisterBoxItem-bottom {
+    width: 100%;
+    display: flex;
+    flex-wrap: 1;
+}
+
+.RegisterBoxItem-bottom .toi {
+    /* width: 50%; */
+    padding: 5px;
+}
+
+.RegisterBoxItem-bottom .pop {
+    /* width: 30%; */
+    padding: 5px;
+}
+.RegisterBoxItem-bottom .cua{
+    padding: 5px;
+}
+.RegisterBoxItem-bottom .button {
+    color: crimson;
+    font-weight: bold;
+}

@@ -1,0 +1,96 @@
+.body-pay{
+    background-color: rgb(229, 242, 238);
+    width: 365px;
+    /* margin-left: 10px; */
+}
+.body-pay .form-img{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+.body-pay .form-img .img{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+}
+.body-pay .form-img .img img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 20px;
+
+}
+.body-pay .nameFilm{
+    padding: 0px 10px;
+    margin-bottom: 10px;
+}
+.body-pay .nameFilmEn{
+    padding: 0px 10px;
+}
+.body-pay .age{
+    display: flex;
+    padding: 10px;
+
+}
+.body-pay .age .age-left{
+    background-color: #F16B38;
+    box-sizing: border-box;
+    padding: 3px 5px;
+    color: white;
+}
+.body-pay .age .age-right{
+    padding: 3px 5px;
+    font-size: 14px;
+    color: red;
+}
+.body-pay .rap{
+    display: flex;
+    padding: 0px 10px;
+}
+.body-pay .ngaychieu{
+    display: flex;
+    padding: 0px 10px;
+}
+.body-pay .thoigian{
+    display: flex;
+    padding: 0px 10px;
+}
+.body-pay .combo{
+    display: flex;
+    padding: 0px 10px;
+}
+.body-pay .ghe{
+    display: flex;
+    padding: 0px 10px;
+}
+.body-pay .continute{
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    padding: 0px 10px;
+}
+.body-pay .continute button{
+padding: 5px 20px;
+color: white;
+background-color: #F16B38;
+border: none;
+font-size: 20px;
+box-sizing: border-box;
+}
+.body-pay .tong{
+    display: flex;
+    padding: 0px 10px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.body-pay .first{
+    margin-right: 5px;
+}
+.body-pay .final{
+    color: dimgrey;
+}
+.body-pay .finaly{
+    color: #F16B38;
+}
+.mgb10{
+    margin-bottom: 10px;
+}

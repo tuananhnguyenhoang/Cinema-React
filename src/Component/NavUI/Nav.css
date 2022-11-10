@@ -1,0 +1,8 @@
+.NavInput{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+ }
+ .NavInput input{
+     padding: 5px;
+ }

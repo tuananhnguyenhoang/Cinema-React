@@ -1,0 +1,315 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+.bol{
+    font-weight: bold;
+}
+.foodmain{
+    margin-top: 20px;
+    display: flex;
+    padding: 0px 140px;
+}
+.foodmain .buttonnone{
+    border: none ;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.food-left {
+    box-sizing: border-box;
+    background-color: #F26B38;
+    width: 74%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.food-left .choosefood {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.food-left .foodbox {
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.food-left .foodbox .typeticket {
+    display: flex;
+    background-color: #47251C;
+    color: white;
+}
+
+.typeticket .type,
+.amount,
+.price,
+.total {
+    padding: 5px;
+}
+
+/* Loai ve */
+
+.typeticket .type {
+    width: 50%;
+
+}
+
+.typeticket .amount {
+    width: 20%;
+
+}
+
+.typeticket .amount p {
+    width: 100%;
+    text-align: center;
+}
+
+.typeticket .price {
+    width: 15%;
+
+}
+
+.typeticket .price p {
+    width: 100%;
+    text-align: center;
+}
+
+.typeticket .total {
+    width: 15%;
+
+}
+
+.typeticket .total p {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Ve nguoilon */
+
+/* Ve thanh vien */
+.venguoilon {
+    display: flex;  
+}
+.venguoilon .type,
+.amount,
+.price,
+.total {
+    padding: 5px;
+    box-sizing: border-box;
+}
+.venguoilon .type {
+    width: 50%;
+}
+.amount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+}
+.input div{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    border: 1px solid black;
+    height: 60%;
+}
+.boxdau{
+    height: 30px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.in{
+    width: 50px;
+    height: 30px;
+}
+.dau{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #1d1c1c;
+    border-radius: 50px;
+    font-size: 30px;
+    box-sizing: border-box;
+}
+.dautrup{
+    margin-bottom: 7px;
+    color: white;
+}
+.daucongp{
+    margin-bottom: 1px;
+    color: white;
+}
+
+
+.price {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.price {
+    text-align: center;
+}
+
+.total {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.totalp {
+    width: 100%;
+    /* background-color: #F26B38; */
+    text-align: right;
+}
+
+
+/* Total Box */
+.Totalbox {
+    margin-top: 5px;
+    display: flex;
+    padding: 5px;
+}
+
+.Totalbox .Total-left {
+    width: 85%;
+    /* padding: 5px; */
+}
+
+.Totalbox .Total-left p {
+    color: #F26B38;
+}
+
+.Totalbox .Total-right {
+    flex-grow: 1;
+}
+
+.Totalbox .Total-right p {
+    width: 100%;
+    color: #F26B38;
+    text-align: right;
+    /* background-color: #F26B38; */
+}
+
+
+/* Box Combo */
+
+
+.food-left .combo {
+    display: flex;
+    background-color: #47251C;
+    padding: 5px;
+    color: white;
+}
+
+.combo .combo-combo {
+    width: 50%;
+}
+
+.combo .combo-amount {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+
+
+.combo .combo-price {
+    width: 15%;
+
+}
+
+.combo .combo-price p {
+    width: 100%;
+    text-align: center;
+}
+
+.combo .combo-total {
+    width: 15%;
+
+}
+
+.combo .combo-total p {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* ICombo */
+
+.iCombo {
+    display: flex;
+    padding: 5px;
+}
+
+.iCombo .img-combo {
+    display: flex;
+    width: 50%;
+    padding: 5px;
+}
+
+.img-combo .img-combo-right {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-combo .img-combo-right .p1 {
+    font-weight: bold;
+}
+
+.img-combo .img-combo-right .p2,
+.p3 {
+    font-size: 14px;
+    margin-top: 2px;
+}
+
+/* combo total */
+.combo-total {
+
+    display: flex;
+    padding: 5px;
+}
+
+.combo-total .combo-total-left {
+    width: 85%;
+    /* padding: 5px; */
+}
+
+.combo-total .combo-total-left p {
+    color: #F26B38;
+}
+
+.combo-total .combo-total-right {
+    flex-grow: 1;
+}
+
+.combo-total .combo-total-right p {
+    width: 100%;
+    color: #F26B38;
+    text-align: right;
+}
+
+
+/*  Bên phải */
+
+.food-right {
+    flex-grow: 1;
+}

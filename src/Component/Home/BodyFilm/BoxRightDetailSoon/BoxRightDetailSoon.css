@@ -1,0 +1,128 @@
+.detailfilm-right {
+    display: flex;
+    flex-direction: column;
+    /* flex-grow: 1; */
+    width: 100%;
+}
+
+.detailfilm-right .receivevocher {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.r .left1 {
+    width: 300px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    background-color: #dde1e7;
+    margin-bottom: 5px;
+}
+.detailfilm-right .boxemail {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin-bottom: 35px;
+    border: 2px solid #F16B38 ;
+}
+
+.detailfilm-right .boxemail input button {
+    width: 100%;
+}
+
+.detailfilm-right .boxemail input {
+    padding: 5px;
+    border: 1px solid #9FA2A6;
+    margin-bottom: 10px;
+}
+
+.detailfilm-right .boxemail button {
+    padding: 5px;
+    background-color: #F16B38;
+    color: white;
+    border: none;
+}
+
+.detailfilm-right .filmdangchieu {
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.detailfilm-right .boxphim {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.detailfilm-right .boxphim p {
+    margin-top: 3px;
+}
+.boxphim .content-1-1{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.boxphim .left1 .content-1-3{
+    display: flex;
+}
+.boxphim .left1 .content-1-3 .age{
+    padding: 3px 5px;
+    background-color: #F16B38;
+    color: white;
+    border-radius: 20px;
+}
+.boxphim .left1 .content-1-3 .minute{
+    padding: 3px 5px;
+}
+/* .detailfilm-right .boxphim .left1 {
+    width: 300px;
+    position: relative;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+
+}
+
+.detailfilm-right .boxphim .left1 .handelerimg {
+    width: 300px;
+}
+
+.detailfilm-right .left1 .handelerimg .hovimg {
+    width: 100%;
+    height: 170px;
+    position: absolute;
+    top: 0px;
+    background-color: red;
+    display: none;
+
+}
+
+.detailfilm-right .left1 .handelerimg .boxbutton {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detailfilm-right .left1 .handelerimg:hover+.hovimg {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.detailfilm-right .left1 .handelerimg img {
+    width: 300px;
+    object-fit: cover;
+    
+}
+
+.detailfilm-right .left1 .handelerimg .boxbutton div {
+    display: block;
+    padding: 5px;
+    margin-right: 10px;
+    color: white;
+    background-color: #df5823;
+    border: 0px;
+} */

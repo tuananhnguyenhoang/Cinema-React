@@ -1,0 +1,39 @@
+.bodyfilm{
+    /* background-color: blue; */
+    padding: 0px 180px;
+    box-sizing: border-box;
+}
+.TitleLog .texta{
+    padding: 10px 10px 10px 10px;
+}
+.bodyfilm a{
+    /* color: blue; */
+    text-decoration: none;
+}
+.box-dangchieu{
+    margin-right: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box-dangchieu hr{
+    width: 90%;
+    background-color:#F16B38 ;
+    border: 1px solid #F16B38;
+    border-radius: 20px;
+}
+.box-sapchieu{
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box-sapchieu hr{
+    width: 90%;
+    background-color:#F16B38 ;
+    border: 1px solid #F16B38;
+    border-radius: 20px;
+}

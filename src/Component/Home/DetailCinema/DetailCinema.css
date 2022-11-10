@@ -1,0 +1,42 @@
+.detailCinema {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 180px;
+    /* background-color: #F16B38; */
+}
+
+.galaxy-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.galaxy-content .galaxy1 {
+    color: #43464B;
+    font-weight: bold;
+}
+
+.galaxy-content .galaxy1 .galaxy1-syb {
+    background-color: #F16B38;
+    display: block;
+    color: #F16B38;
+    width: 20%;
+    height: 10px;
+}
+
+.detailCinema p {
+    color: #6D4C4B;
+}
+
+.detailCinema b {
+    color: black;
+}
+.mgB{
+    margin-bottom: 15px;
+}
+.mgB20{
+    margin-bottom: 20px;
+}
+.mgR {
+    margin-right: 20px;
+}
