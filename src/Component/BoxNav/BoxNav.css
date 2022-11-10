@@ -1,0 +1,91 @@
+.MainBoxNavBar{
+    display: flex;
+    flex-direction: column;
+}
+.MainBoxNavBar .Div-phimdangchieu  p{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 10px;
+    color: white;
+}
+.MainBoxNavBar .Div-phimsapchieu  p{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 10px;
+    color: white
+}
+.Div-phimdangchieu p:hover{
+    color: orange;
+}
+.Div-phimsapchieu p:hover{
+    color: orange;
+}
+
+.BoxNavBar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.BoxNavBar  p  {
+    margin-top: 3px;
+}
+.BoxNavBar .left1 {
+    width: 170px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.BoxNavBar .left1 .handelerimg{
+    width: 170px;
+    position: relative;
+   
+}
+.BoxNavBar .left1 .handelerimg .hovimg{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+    
+}
+.BoxNavBar .left1 .handelerimg .boxbutton{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.BoxNavBar .left1 .handelerimg:hover  .hovimg{
+    opacity: 50;
+}
+.BoxNavBar .left1 .handelerimg img{
+    width: 170px;
+    object-fit: cover;
+}
+.BoxNavBar .left1 .handelerimg button{
+    padding: 5px;
+    margin-right: 10px;
+    color: white;
+    background-color: #F16B38;
+    border: 0px;
+}
+
+.BoxNavBar .left1 .content-1-1 {
+    color:white;
+}
+.BoxNavBar .left1 .content-1-2 {
+    color:#969B9F ;
+}

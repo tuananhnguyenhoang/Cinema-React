@@ -1,0 +1,180 @@
+import React, { Component } from 'react'
+import { connect } from 'react-redux/es/exports'
+import MovieR from '../../redux/Reducer/MovieReducer';
+
+import './Ticketcinema.css'
+class Ticketcinema extends Component {
+  constructor() {
+    super();
+
+    var today = new Date(),
+      date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+
+    this.state = {
+      date: date,
+      showtime: "",
+      TimeWatch: [],
+      idCineplex: "",
+      idCinemaApi: ""
+
+    };
+  }
+  componentDidMount() {
+    this.props.CinemaFunc()
+  }
+  render() {
+    function getFormattedDay(dt) {
+      var today = new Date(dt)
+      var week = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
+      var day = week[today.getDay()];
+      return day;
+    }
+    function getFormattedDate(dt) {
+      var today = new Date(dt)
+      var week = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
+      var monthNames = new Array("  ", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+      )
+      var day = week[today.getDay()];
+      var dd = today.getDate();
+      var mm = today.getMonth() + 1; //January is 0!
+      var yyyy = today.getFullYear();
+      var hour = today.getHours();
+      var minu = today.getMinutes();
+
+      if (dd < 10) { dd = '0' + dd }
+      if (mm < 10) { mm = '0' + mm }
+      if (minu < 10) { minu = '0' + minu }
+
+      return yyyy + '-' + mm + '-' + dd;
+
+    }
+    var TimeDay = (dt) => {
+      var date = new Date(dt)
+      var hours = date.getHours();
+      var minutes = date.getMinutes();
+      var ampm = hours >= 12 ? "PM" : "AM"
+      hours = hours % 12;
+      hours = hours < 10 ? "0" + hours : hours;
+      minutes = minutes < 10 ? "0" + minutes : minutes;
+      return (`${hours}:${minutes} ${ampm}`)
+    }
+    const CheckMovie = (CinemaId, keyId, dateApi) => {
+      this.props.MovieFunc(CinemaId, keyId, dateApi)
+      this.setState({
+        idCineplex: keyId,
+        idCinemaApi: CinemaId,
+        dateApi: this.state.showtime
+
+      })
+    }
+    const HandleSelect = (event, CinemaId, keyId, dateApi) => {
+      this.props.MovieFunc(this.state.idCinemaApi, this.state.idCineplex, event.target.value)
+    }
+    return (
+      <div className='Ticketcinema'>
+
+        <div className='TicketcinemaItem'>
+          <div className='TicketcinemaTitle'>
+            <p>CHỌN CỤM RẠP</p>
+          </div>
+
+          {this.props.cinema.lsCinema &&
+            this.props.cinema.lsCinema.map((n, i) => {
+              return <button onClick={() => this.props.CineplexFunc(n.Id)} key={i}>{n.Name}</button>
+            })
+          }
+
+
+
+        </div>
+        <div className='TicketcinemaItem'>
+          <div className='TicketcinemaTitle'>
+            <p>CHỌN RẠP</p>
+          </div>
+          <div className='ChooseCineplex'>
+
+            {this.props.cineplex.lsCineplex &&
+              this.props.cineplex.lsCineplex.Items.map((n, i) => {
+                return <button onClick={() => CheckMovie(n.ApiCinemaId, n.Cineplex, this.state.date)} key={i}>{n.Name}</button>
+              })
+            }
+          </div>
+
+        </div>
+        <div className='TicketcinemaItem'>
+          <div className='TicketcinemaTitle'>
+            <p>CHỌN PHIM</p>
+
+          </div>
+
+
+          <div className='ChooseCineplex'>
+            <select onChange={(event) => HandleSelect(event)}>
+              {
+                this.props.movie.lsMovie &&
+                this.props.movie.lsMovie.ShowTimes.map((v, i) => {
+                  return <option key={i} value={getFormattedDate(v)}>{getFormattedDate(v)}</option>
+                })
+              }
+            </select>
+            {
+              this.props.movie.lsMovie &&
+              this.props.movie.lsMovie.Films.map((e, i) => {
+                return (<button onClick={() => this.setState({ TimeWatch: e.VersionsCaptions[0].ShowTimes })} key={i}>
+                  <img src={e.GraphicUrl} width={"20%"} />
+                  <p>{e.Title}</p>
+                  <div className='TicketcinemaItemCode'>{e.ApiRating}</div>
+                </button>)
+              })
+
+            }
+
+          </div>
+        </div>
+        <div className='TicketcinemaItem'>
+          <div className='TicketcinemaTitle'>
+            <p>CHỌN SUẤT</p>
+          </div>
+          <div className='ChooseCineplex'>
+
+            <div>
+              {
+                this.state.TimeWatch.map((n, i) => {
+                  return <div key={i}>
+                    <h1 >{TimeDay(n.ShowTime)}</h1>
+                  </div>
+                })
+              }
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    )
+  }
+}
+const mapStateToProps = (state, ownProps) => {
+  return {
+    cinema: state.cinema,
+    cineplex: state.cineplex,
+    movie: state.Movie
+  }
+}
+const mapDispatchToProps = (dispatch, ownProps) => {
+  return {
+    CinemaFunc: (val) => {
+      dispatch({ type: "GetCinemaSaga", payload: val })
+    },
+    CineplexFunc: (keyID) => {
+      dispatch({ type: "GetCineplexSaga", payload: keyID })
+    },
+    MovieFunc: (CinemaId, keyId, dateApi) => {
+      dispatch({ type: "GetMovieSaga", payload: { CinemaId: CinemaId, keyId: keyId, dateApi: dateApi } })
+    },
+
+
+  }
+}
+export default connect(mapStateToProps, mapDispatchToProps)(Ticketcinema)

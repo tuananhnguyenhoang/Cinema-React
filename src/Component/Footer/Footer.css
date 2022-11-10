@@ -1,0 +1,138 @@
+.footer {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #1A1A1A;
+    box-sizing: border-box;
+
+}
+
+.footer .top-footer {
+    background-color: aquamarine;
+    display: flex;
+    background-color: #1A1A1A;
+    color: #9FA2A6;
+    border-bottom: 1px solid #9FA2A6;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 30px 0px;
+
+}
+
+.footer .top-footer .box {
+    box-sizing: border-box;
+    width: 15%;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #F16B38; */
+}
+.footer .top-footer .top-box4 {
+    margin-right: 20px;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #F16B38; */
+    box-sizing: border-box;
+
+}
+
+.footer .top-footer .box .anydiv {
+    display: flex;
+    /* width: 200px; */
+    /* background-color: #F16B38; */
+}
+
+.anydiv .pox {
+    margin: 0px 5px 3px 5px;
+    height: 20px;
+    display: block;
+    width: 4px;
+    background-color: #F16B38;
+}
+.box .h1 {
+    font-size: 15px;
+    box-sizing: border-box;
+    padding: 15px 0px;
+}
+.box .a {
+    font-size: 11px;
+    padding: 3px 0px;
+}
+.box .anydiv {
+    margin: 5px 0px;
+}
+.top-box4 .h1 {
+    font-size: 15px;
+    box-sizing: border-box;
+    padding: 15px 0px 5px 0px;
+}
+.top-box4 .a {
+    font-size: 11px;
+}
+.top-box4 .anydiv {
+    margin: 5px 0px;
+    width: 250px;
+    display: flex;
+}
+.top-box4 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    /* background-color: #F16B38; */
+}
+.footer .bottom-footer {
+    background-color: #1A1A1A;
+    display: flex;
+    margin: 10px 5px 10px 130px;
+}
+
+.footer .bottom-footer img {
+    width: 70px;
+    margin-right: 13px;
+}
+
+.footer .bottom-footer p {
+    color: #9FA2A6;
+}
+
+.top-box5 {
+    background-color: #1A1A1A;
+    box-sizing: border-box;
+    /* background-color: #F16B38; */
+
+}
+
+.top-box5 img {
+    flex-grow: 1;
+    width: 150px;
+    margin-top: 30px;
+    background-color: #1A1A1A;
+
+}
+
+.fb {
+    font-size: 20px;
+    margin-right: 10px;
+
+}
+
+.youtobe {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.instagram {
+    font-size: 20px
+}
+
+.apple {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.googleplay {
+    font-size: 20px
+}

@@ -1,0 +1,38 @@
+.BuyTicket{
+    width: 80%;
+}
+.MenuBuyTicket{
+    width: 100%;
+    display: flex;
+    text-align: left;
+}
+.MenuBuyTicket a{
+    text-decoration: none;
+}
+.colBuyTicket {
+    color: #F16B38;
+}
+.box-cinema{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box-cinema hr{
+    width: 90%;
+    background-color:#F16B38 ;
+    border: 1px solid #F16B38;
+    border-radius: 20px;
+}
+.box-movie{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box-movie hr{
+    width: 90%;
+    background-color:#F16B38 ;
+    border: 1px solid #F16B38;
+    border-radius: 20px;
+}
